@@ -29,8 +29,19 @@
             @csrf
             <button type="submit" class="text-white underline">Logout</button>
             @else
+            <h1 class="text-2xl text-white mb-4">Please log in</h1>
 
-            <h1 class="text-2xl text-white">please log in</h1>
+
+            <a href="/login"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded transition">
+                Login
+            </a>
+
+
+            <p class="mt-3 text-gray-400">
+                Don’t have an account?
+                <a href="/registration" class="underline text-blue-400 hover:text-blue-500">Register here</a>
+            </p>
             @endif
 
     </section>
