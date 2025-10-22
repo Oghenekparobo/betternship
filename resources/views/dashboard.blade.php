@@ -25,7 +25,7 @@
         <h1 class="text-2xl text-white">{{ session('username') }}</h1>
 
         <!-- bonus -->
-        <form method="POST" action="/logout">
+        <form method="get" action="/logout">
             @csrf
             <button type="submit" class="text-white underline">Logout</button>
             @else
